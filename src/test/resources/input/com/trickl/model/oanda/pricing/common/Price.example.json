@@ -1,0 +1,20 @@
+{
+  "closeoutBid": 0.89101,
+  "closeoutAsk": 0.89782,
+  "asks": [
+    {
+      "price": 0.89552,
+      "liquidity": 1000000
+    }
+  ],
+  "tradeable": false,
+  "bids": [
+    {
+      "price": 0.89443,
+      "liquidity": 1000000
+    }
+  ],
+  "instrument": "EUR_GBP",
+  "time": "2007-12-03T10:15:30.000000000Z",
+  "type": "PRICE"
+}

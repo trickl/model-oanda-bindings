@@ -1,0 +1,23 @@
+{
+  "createdByUserID": 123,
+  "NAV": "43650.78835",
+  "hedgingEnabled": false,
+  "marginCloseoutUnrealizedPL": "0.00000",
+  "openPositionCount": 0,
+  "marginAvailable": "43650.78835",
+  "positionValue": "0.00000",
+  "marginCloseoutPositionValue": "0.00000",
+  "marginRate": "0.02",
+  "marginCloseoutMarginUsed": "0.00000",
+  "marginCloseoutNAV": "43650.78835",
+  "balance": "43650.78835",
+  "marginUsed": "0.00000",
+  "lastTransactionID": "6356",
+  "alias": "My New Account #2",
+  "createdTime": "2015-08-12T18:21:00.697504698Z",
+  "currency": "CHF",
+  "marginCloseoutPercent": "0.00000",
+  "id": "<ACCOUNT>",
+  "pl": "-56034.41199",
+  "openTradeCount": 0
+}

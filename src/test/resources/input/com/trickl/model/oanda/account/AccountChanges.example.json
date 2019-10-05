@@ -1,0 +1,14 @@
+{
+  "ordersCreated": [],
+  "tradesReduced": [],
+  "ordersCancelled": [],
+  "tradesClosed": [],
+  "ordersFilled": [
+    {
+      "type": "LIMIT"
+    }
+  ],
+  "tradesOpened": [],
+  "ordersTriggered": [],
+  "transactions": []
+}

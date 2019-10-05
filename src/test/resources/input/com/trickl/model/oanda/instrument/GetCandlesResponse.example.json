@@ -1,0 +1,17 @@
+{
+  "granularity": "M5",
+  "candles": [
+    {
+      "volume": 6,
+      "mid": {
+        "c": 0.89554,
+        "h": 0.89552,
+        "l": 0.89553,
+        "o": 0.89551
+      },
+      "time": "2007-12-03T10:15:30.000000000Z",
+      "complete": true
+    }
+  ],
+  "instrument": "EUR_GBP"
+}
