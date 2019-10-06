@@ -5,7 +5,7 @@ import com.trickl.model.pricing.instrument.CurrencyPair;
 import com.trickl.model.pricing.primitives.OrderBook;
 import com.trickl.model.pricing.primitives.PriceSource;
 import com.trickl.model.pricing.primitives.Quote;
-import com.trickl.oanda.model.text.CurrencyPairFormat;
+import com.trickl.text.oanda.CurrencyPairFormat;
 
 import java.math.BigDecimal;
 import java.util.function.Function;
@@ -27,7 +27,13 @@ public class OrderBookReader
     OrderBook.OrderBookBuilder builder = OrderBook.builder();
     builder.time(orderBook.getTime());
 
-    String instrumentId = CurrencyPairFormat.format(instrument, CurrencyPairFormat.SIXCHAR_FORMAT);
+    com.trickl.model.oanda.instrument.CurrencyPair oandaInstrument =
+        new com.trickl.model.oanda.instrument.CurrencyPair(
+        instrument.getBuyCurrency(),
+        instrument.getSellCurrency());
+
+    String instrumentId = CurrencyPairFormat.format(
+        oandaInstrument, CurrencyPairFormat.SIXCHAR_FORMAT);
     PriceSource source =
         PriceSource.builder().exchangeId(exchangeId).instrumentId(instrumentId).build();
 

@@ -6,7 +6,8 @@ import com.trickl.model.pricing.instrument.CurrencyPair;
 import com.trickl.model.pricing.primitives.OrderBook;
 import com.trickl.model.pricing.primitives.PriceSource;
 import com.trickl.model.pricing.primitives.Quote;
-import com.trickl.oanda.model.text.CurrencyPairFormat;
+import com.trickl.text.oanda.CurrencyPairFormat;
+
 import java.util.function.Function;
 import lombok.RequiredArgsConstructor;
 
@@ -19,7 +20,14 @@ public class PriceToOrderBookConverter implements Function<Price, OrderBook> {
   public OrderBook apply(Price price) {
     OrderBook.OrderBookBuilder builder = OrderBook.builder();
     builder.time(price.getTime());
-    String instrumentId = CurrencyPairFormat.format(instrument, CurrencyPairFormat.SIXCHAR_FORMAT);
+
+    com.trickl.model.oanda.instrument.CurrencyPair oandaInstrument =
+        new com.trickl.model.oanda.instrument.CurrencyPair(
+        instrument.getBuyCurrency(),
+        instrument.getSellCurrency());
+
+    String instrumentId = CurrencyPairFormat.format(
+        oandaInstrument, CurrencyPairFormat.SIXCHAR_FORMAT);
     PriceSource source =
         PriceSource.builder().exchangeId(exchangeId).instrumentId(instrumentId).build();
 
