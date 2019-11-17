@@ -1,0 +1,63 @@
+{
+  "offers": [
+    {
+      "volume": 44340,
+      "price": 116,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    },
+    {
+      "volume": 0,
+      "price": 150,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    }
+  ],
+  "bids": [
+    {
+      "volume": 0,
+      "price": 0,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    },
+    {
+      "volume": 1060,
+      "price": 80.9,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    },
+    {
+      "volume": 15830,
+      "price": 115.45,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    },
+    {
+      "volume": 33780,
+      "price": 115.5,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    },
+    {
+      "volume": 24280,
+      "price": 115.55,
+      "source": {
+        "exchange_id": "OANDA",
+        "instrument_id": "EURGBP"
+      }
+    }
+  ],
+  "time": "2017-01-10T14:40:00Z"
+}

@@ -6,7 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.trickl.model.oanda.instrument.Candlestick;
+import com.trickl.model.oanda.instrument.OrderBook;
+import com.trickl.model.pricing.instrument.CurrencyPair;
 import com.trickl.oanda.model.bindings.CandleReader;
+import com.trickl.oanda.model.bindings.OrderBookReader;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,6 +18,7 @@ import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Instant;
+import java.util.Currency;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -43,7 +47,11 @@ public class ConversionTest {
   static Stream<Object> sourceProvider() {
     return Stream.of(
         new CandleReader()
-            .apply(getInputObjectUsingConvention(Candlestick.class)));
+            .apply(getInputObjectUsingConvention(Candlestick.class)),
+        new OrderBookReader(CurrencyPair.builder()
+            .buyCurrency(Currency.getInstance("EUR"))
+            .sellCurrency(Currency.getInstance("GBP")).build(), "OANDA")
+            .apply(getInputObjectUsingConvention(OrderBook.class)));
   }
 
   private static Path getProjectDirectory() {
