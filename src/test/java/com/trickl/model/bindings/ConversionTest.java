@@ -5,16 +5,15 @@ import static com.trickl.assertj.core.api.JsonObjectAssertions.assertThat;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.trickl.model.instrument.CurrencyPair;
 import com.trickl.model.oanda.instrument.Candlestick;
 import com.trickl.model.oanda.instrument.OrderBook;
-import com.trickl.model.pricing.instrument.CurrencyPair;
 import com.trickl.oanda.model.bindings.CandleReader;
 import com.trickl.oanda.model.bindings.OrderBookReader;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Instant;

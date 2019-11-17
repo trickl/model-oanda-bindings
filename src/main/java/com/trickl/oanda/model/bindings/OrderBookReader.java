@@ -1,7 +1,7 @@
 package com.trickl.oanda.model.bindings;
 
+import com.trickl.model.instrument.CurrencyPair;
 import com.trickl.model.oanda.instrument.OrderBookBucket;
-import com.trickl.model.pricing.instrument.CurrencyPair;
 import com.trickl.model.pricing.primitives.OrderBook;
 import com.trickl.model.pricing.primitives.PriceSource;
 import com.trickl.model.pricing.primitives.Quote;
