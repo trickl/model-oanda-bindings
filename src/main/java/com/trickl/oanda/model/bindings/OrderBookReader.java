@@ -6,7 +6,6 @@ import com.trickl.model.pricing.primitives.OrderBook;
 import com.trickl.model.pricing.primitives.PriceSource;
 import com.trickl.model.pricing.primitives.Quote;
 import com.trickl.text.oanda.CurrencyPairFormat;
-
 import java.math.BigDecimal;
 import java.util.function.Function;
 import lombok.RequiredArgsConstructor;

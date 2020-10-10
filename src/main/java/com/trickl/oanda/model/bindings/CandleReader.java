@@ -4,7 +4,6 @@ import com.trickl.model.oanda.instrument.Candlestick;
 import com.trickl.model.oanda.instrument.CandlestickData;
 import com.trickl.model.pricing.primitives.Candle;
 import com.trickl.oanda.model.exceptions.ConversionFailureException;
-
 import java.util.function.Function;
 
 public class CandleReader implements Function<Candlestick, Candle> {

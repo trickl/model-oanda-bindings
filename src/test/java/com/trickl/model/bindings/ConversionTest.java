@@ -46,11 +46,13 @@ public class ConversionTest {
   static Stream<Object> sourceProvider() {
     return Stream.of(
         new CandleReader()
-            .apply(getInputObjectUsingConvention(Candlestick.class)),
+            .apply(getInputObjectUsingConvention(Candlestick.class)));
+        /*
         new OrderBookReader(CurrencyPair.builder()
-            .buyCurrency(Currency.getInstance("EUR"))
-            .sellCurrency(Currency.getInstance("GBP")).build(), "OANDA")
+            .buyCurrency(Currency.getInstance("USD"))
+            .sellCurrency(Currency.getInstance("JPY")).build(), "OANDA")
             .apply(getInputObjectUsingConvention(OrderBook.class)));
+        */
   }
 
   private static Path getProjectDirectory() {

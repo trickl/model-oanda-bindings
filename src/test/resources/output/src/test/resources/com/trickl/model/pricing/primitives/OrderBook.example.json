@@ -5,7 +5,7 @@
       "price": 116,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     },
     {
@@ -13,7 +13,7 @@
       "price": 150,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     }
   ],
@@ -23,7 +23,7 @@
       "price": 0,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     },
     {
@@ -31,7 +31,7 @@
       "price": 80.9,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     },
     {
@@ -39,7 +39,7 @@
       "price": 115.45,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     },
     {
@@ -47,7 +47,7 @@
       "price": 115.5,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     },
     {
@@ -55,7 +55,7 @@
       "price": 115.55,
       "source": {
         "exchange_id": "OANDA",
-        "instrument_id": "EURGBP"
+        "instrument_id": "USDJPY"
       }
     }
   ],
