@@ -39,18 +39,18 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.8</version>
+      <version>1.18.24</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.github.trickl</groupId>
       <artifactId>model-trickl-finance</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
+      <version>0.0.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.github.trickl</groupId>
       <artifactId>model-oanda</artifactId>
-      <version>0.1.9-SNAPSHOT</version>
+      <version>0.1.10-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -152,7 +152,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.3</version>
+        <version>3.4.1</version>
         <configuration>
           <source>8</source>
         </configuration>
@@ -221,7 +221,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.6</version>
+            <version>0.8.8</version>
             <executions>
               <execution>
                 <id>prepare-agent</id>

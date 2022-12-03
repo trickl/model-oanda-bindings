@@ -52,7 +52,7 @@ public class OrderReader implements Function<com.trickl.model.oanda.order.Order,
         .quantity(units)
         .timeInForce(new TimeInForceReader().apply(timeInForce))
         .type(new OrderTypeReader().apply(type))
-        .filledAtTime(filledTime)
+        .lastModifiedTime(filledTime)
         .build();
   }
 }
