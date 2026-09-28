@@ -39,13 +39,13 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.24</version>
+      <version>1.18.34</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.github.trickl</groupId>
       <artifactId>model-trickl-finance</artifactId>
-      <version>0.0.5-SNAPSHOT</version>
+      <version>0.0.8-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.github.trickl</groupId>
@@ -87,7 +87,7 @@
     <dependency>
       <groupId>com.github.trickl</groupId>
       <artifactId>assertj-json-serialize</artifactId>
-      <version>0.1.10-SNAPSHOT</version>
+      <version>0.1.11-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -113,10 +113,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
+        <version>3.13.0</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <release>21</release>
           <debug>true</debug>
         </configuration>
       </plugin>
@@ -134,7 +133,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.2.1</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -147,7 +146,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.10.1</version>
         <configuration>
           <source>8</source>
         </configuration>
@@ -163,7 +162,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.5</version>
+        <version>3.2.7</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
@@ -177,7 +176,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.3.1</version>
         <dependencies>
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
@@ -216,7 +215,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.8</version>
+            <version>0.8.12</version>
             <executions>
               <execution>
                 <id>prepare-agent</id>
@@ -252,9 +251,9 @@
               <execution>
                 <phase>test</phase>
                 <configuration>
-                  <tasks>
+                  <target>
                     <replace file="target/jacoco-ut/jacoco.xml" token="com/" value="src/main/java/com/"/>
-                  </tasks>
+                  </target>
                 </configuration>
                 <goals>
                   <goal>run</goal>
@@ -265,7 +264,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.22.0</version>
+            <version>3.5.1</version>
           </plugin>
         </plugins>
       </build>
